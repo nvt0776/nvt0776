@@ -15,6 +15,6 @@
   </a>
 </p>
 
-<img src="./mascot.gif" alt="nvtam_X Mascot" width="100%" />
+<img src="./mascot.svg" alt="nvtam_X Mascot" width="100%" />
 
 </div>
