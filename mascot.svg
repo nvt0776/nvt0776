@@ -1,545 +1,131 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 984 774" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 984 772" width="100%" height="auto">
 <style>
 
   .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 10px; }
   .titlebar { fill: #161b22; }
-  .title-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #8b949e; text-anchor: middle; }
+  @keyframes appear {
+    to { opacity: 1; }
+  }
   .line {
     font-family: 'Consolas', 'Fira Code', 'Courier New', monospace;
     font-size: 12.5px;
     fill: #00F2FE;
     opacity: 0;
-  }
-
-  .l0 {
-    animation: anim_l0 8.5s infinite;
-  }
-  @keyframes anim_l0 {
-    0%, 0.0% { opacity: 0; }
-    0.3%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l1 {
-    animation: anim_l1 8.5s infinite;
-  }
-  @keyframes anim_l1 {
-    0%, 0.8% { opacity: 0; }
-    1.1%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l2 {
-    animation: anim_l2 8.5s infinite;
-  }
-  @keyframes anim_l2 {
-    0%, 1.6% { opacity: 0; }
-    1.9%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l3 {
-    animation: anim_l3 8.5s infinite;
-  }
-  @keyframes anim_l3 {
-    0%, 2.4% { opacity: 0; }
-    2.7%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l4 {
-    animation: anim_l4 8.5s infinite;
-  }
-  @keyframes anim_l4 {
-    0%, 3.3% { opacity: 0; }
-    3.6%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l5 {
-    animation: anim_l5 8.5s infinite;
-  }
-  @keyframes anim_l5 {
-    0%, 4.1% { opacity: 0; }
-    4.4%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l6 {
-    animation: anim_l6 8.5s infinite;
-  }
-  @keyframes anim_l6 {
-    0%, 4.9% { opacity: 0; }
-    5.2%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l7 {
-    animation: anim_l7 8.5s infinite;
-  }
-  @keyframes anim_l7 {
-    0%, 5.7% { opacity: 0; }
-    6.0%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l8 {
-    animation: anim_l8 8.5s infinite;
-  }
-  @keyframes anim_l8 {
-    0%, 6.5% { opacity: 0; }
-    6.8%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l9 {
-    animation: anim_l9 8.5s infinite;
-  }
-  @keyframes anim_l9 {
-    0%, 7.3% { opacity: 0; }
-    7.6%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l10 {
-    animation: anim_l10 8.5s infinite;
-  }
-  @keyframes anim_l10 {
-    0%, 8.1% { opacity: 0; }
-    8.4%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l11 {
-    animation: anim_l11 8.5s infinite;
-  }
-  @keyframes anim_l11 {
-    0%, 9.0% { opacity: 0; }
-    9.3%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l12 {
-    animation: anim_l12 8.5s infinite;
-  }
-  @keyframes anim_l12 {
-    0%, 9.8% { opacity: 0; }
-    10.1%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l13 {
-    animation: anim_l13 8.5s infinite;
-  }
-  @keyframes anim_l13 {
-    0%, 10.6% { opacity: 0; }
-    10.9%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l14 {
-    animation: anim_l14 8.5s infinite;
-  }
-  @keyframes anim_l14 {
-    0%, 11.4% { opacity: 0; }
-    11.7%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l15 {
-    animation: anim_l15 8.5s infinite;
-  }
-  @keyframes anim_l15 {
-    0%, 12.2% { opacity: 0; }
-    12.5%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l16 {
-    animation: anim_l16 8.5s infinite;
-  }
-  @keyframes anim_l16 {
-    0%, 13.0% { opacity: 0; }
-    13.3%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l17 {
-    animation: anim_l17 8.5s infinite;
-  }
-  @keyframes anim_l17 {
-    0%, 13.8% { opacity: 0; }
-    14.1%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l18 {
-    animation: anim_l18 8.5s infinite;
-  }
-  @keyframes anim_l18 {
-    0%, 14.7% { opacity: 0; }
-    15.0%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l19 {
-    animation: anim_l19 8.5s infinite;
-  }
-  @keyframes anim_l19 {
-    0%, 15.5% { opacity: 0; }
-    15.8%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l20 {
-    animation: anim_l20 8.5s infinite;
-  }
-  @keyframes anim_l20 {
-    0%, 16.3% { opacity: 0; }
-    16.6%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l21 {
-    animation: anim_l21 8.5s infinite;
-  }
-  @keyframes anim_l21 {
-    0%, 17.1% { opacity: 0; }
-    17.4%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l22 {
-    animation: anim_l22 8.5s infinite;
-  }
-  @keyframes anim_l22 {
-    0%, 17.9% { opacity: 0; }
-    18.2%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l23 {
-    animation: anim_l23 8.5s infinite;
-  }
-  @keyframes anim_l23 {
-    0%, 18.7% { opacity: 0; }
-    19.0%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l24 {
-    animation: anim_l24 8.5s infinite;
-  }
-  @keyframes anim_l24 {
-    0%, 19.5% { opacity: 0; }
-    19.8%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l25 {
-    animation: anim_l25 8.5s infinite;
-  }
-  @keyframes anim_l25 {
-    0%, 20.4% { opacity: 0; }
-    20.7%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l26 {
-    animation: anim_l26 8.5s infinite;
-  }
-  @keyframes anim_l26 {
-    0%, 21.2% { opacity: 0; }
-    21.5%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l27 {
-    animation: anim_l27 8.5s infinite;
-  }
-  @keyframes anim_l27 {
-    0%, 22.0% { opacity: 0; }
-    22.3%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l28 {
-    animation: anim_l28 8.5s infinite;
-  }
-  @keyframes anim_l28 {
-    0%, 22.8% { opacity: 0; }
-    23.1%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l29 {
-    animation: anim_l29 8.5s infinite;
-  }
-  @keyframes anim_l29 {
-    0%, 23.6% { opacity: 0; }
-    23.9%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l30 {
-    animation: anim_l30 8.5s infinite;
-  }
-  @keyframes anim_l30 {
-    0%, 24.4% { opacity: 0; }
-    24.7%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l31 {
-    animation: anim_l31 8.5s infinite;
-  }
-  @keyframes anim_l31 {
-    0%, 25.2% { opacity: 0; }
-    25.5%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l32 {
-    animation: anim_l32 8.5s infinite;
-  }
-  @keyframes anim_l32 {
-    0%, 26.1% { opacity: 0; }
-    26.4%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l33 {
-    animation: anim_l33 8.5s infinite;
-  }
-  @keyframes anim_l33 {
-    0%, 26.9% { opacity: 0; }
-    27.2%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l34 {
-    animation: anim_l34 8.5s infinite;
-  }
-  @keyframes anim_l34 {
-    0%, 27.7% { opacity: 0; }
-    28.0%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l35 {
-    animation: anim_l35 8.5s infinite;
-  }
-  @keyframes anim_l35 {
-    0%, 28.5% { opacity: 0; }
-    28.8%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l36 {
-    animation: anim_l36 8.5s infinite;
-  }
-  @keyframes anim_l36 {
-    0%, 29.3% { opacity: 0; }
-    29.6%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l37 {
-    animation: anim_l37 8.5s infinite;
-  }
-  @keyframes anim_l37 {
-    0%, 30.1% { opacity: 0; }
-    30.4%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l38 {
-    animation: anim_l38 8.5s infinite;
-  }
-  @keyframes anim_l38 {
-    0%, 31.0% { opacity: 0; }
-    31.3%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l39 {
-    animation: anim_l39 8.5s infinite;
-  }
-  @keyframes anim_l39 {
-    0%, 31.8% { opacity: 0; }
-    32.1%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l40 {
-    animation: anim_l40 8.5s infinite;
-  }
-  @keyframes anim_l40 {
-    0%, 32.6% { opacity: 0; }
-    32.9%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l41 {
-    animation: anim_l41 8.5s infinite;
-  }
-  @keyframes anim_l41 {
-    0%, 33.4% { opacity: 0; }
-    33.7%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l42 {
-    animation: anim_l42 8.5s infinite;
-  }
-  @keyframes anim_l42 {
-    0%, 34.2% { opacity: 0; }
-    34.5%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l43 {
-    animation: anim_l43 8.5s infinite;
-  }
-  @keyframes anim_l43 {
-    0%, 35.0% { opacity: 0; }
-    35.3%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l44 {
-    animation: anim_l44 8.5s infinite;
-  }
-  @keyframes anim_l44 {
-    0%, 35.8% { opacity: 0; }
-    36.1%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l45 {
-    animation: anim_l45 8.5s infinite;
-  }
-  @keyframes anim_l45 {
-    0%, 36.7% { opacity: 0; }
-    37.0%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l46 {
-    animation: anim_l46 8.5s infinite;
-  }
-  @keyframes anim_l46 {
-    0%, 37.5% { opacity: 0; }
-    37.8%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l47 {
-    animation: anim_l47 8.5s infinite;
-  }
-  @keyframes anim_l47 {
-    0%, 38.3% { opacity: 0; }
-    38.6%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l48 {
-    animation: anim_l48 8.5s infinite;
-  }
-  @keyframes anim_l48 {
-    0%, 39.1% { opacity: 0; }
-    39.4%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l49 {
-    animation: anim_l49 8.5s infinite;
-  }
-  @keyframes anim_l49 {
-    0%, 39.9% { opacity: 0; }
-    40.2%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l50 {
-    animation: anim_l50 8.5s infinite;
-  }
-  @keyframes anim_l50 {
-    0%, 40.7% { opacity: 0; }
-    41.0%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
-
-  .l51 {
-    animation: anim_l51 8.5s infinite;
-  }
-  @keyframes anim_l51 {
-    0%, 41.5% { opacity: 0; }
-    41.8%, 84.7% { opacity: 1; }
-    91.8%, 100% { opacity: 0; }
-  }
+    animation: appear 0.01s forwards;
+  }
+  .l0 { animation-delay: 0.000s; }
+  .l1 { animation-delay: 0.022s; }
+  .l2 { animation-delay: 0.044s; }
+  .l3 { animation-delay: 0.066s; }
+  .l4 { animation-delay: 0.088s; }
+  .l5 { animation-delay: 0.110s; }
+  .l6 { animation-delay: 0.132s; }
+  .l7 { animation-delay: 0.154s; }
+  .l8 { animation-delay: 0.176s; }
+  .l9 { animation-delay: 0.198s; }
+  .l10 { animation-delay: 0.220s; }
+  .l11 { animation-delay: 0.242s; }
+  .l12 { animation-delay: 0.264s; }
+  .l13 { animation-delay: 0.286s; }
+  .l14 { animation-delay: 0.308s; }
+  .l15 { animation-delay: 0.330s; }
+  .l16 { animation-delay: 0.352s; }
+  .l17 { animation-delay: 0.374s; }
+  .l18 { animation-delay: 0.396s; }
+  .l19 { animation-delay: 0.418s; }
+  .l20 { animation-delay: 0.440s; }
+  .l21 { animation-delay: 0.462s; }
+  .l22 { animation-delay: 0.484s; }
+  .l23 { animation-delay: 0.506s; }
+  .l24 { animation-delay: 0.528s; }
+  .l25 { animation-delay: 0.550s; }
+  .l26 { animation-delay: 0.572s; }
+  .l27 { animation-delay: 0.594s; }
+  .l28 { animation-delay: 0.616s; }
+  .l29 { animation-delay: 0.638s; }
+  .l30 { animation-delay: 0.660s; }
+  .l31 { animation-delay: 0.682s; }
+  .l32 { animation-delay: 0.704s; }
+  .l33 { animation-delay: 0.726s; }
+  .l34 { animation-delay: 0.748s; }
+  .l35 { animation-delay: 0.770s; }
+  .l36 { animation-delay: 0.792s; }
+  .l37 { animation-delay: 0.814s; }
+  .l38 { animation-delay: 0.836s; }
+  .l39 { animation-delay: 0.858s; }
+  .l40 { animation-delay: 0.880s; }
+  .l41 { animation-delay: 0.902s; }
+  .l42 { animation-delay: 0.924s; }
+  .l43 { animation-delay: 0.946s; }
+  .l44 { animation-delay: 0.968s; }
+  .l45 { animation-delay: 0.990s; }
+  .l46 { animation-delay: 1.012s; }
+  .l47 { animation-delay: 1.034s; }
+  .l48 { animation-delay: 1.056s; }
+  .l49 { animation-delay: 1.078s; }
+  .l50 { animation-delay: 1.100s; }
+  .l51 { animation-delay: 1.122s; }
 
 </style>
 
-<rect width="984" height="774" class="bg" />
-<path d="M 0,10 A 10,10 0 0,1 10,0 L 974,0 A 10,10 0 0,1 984,10 L 984,36 L 0,36 Z" class="titlebar" />
-<circle cx="20" cy="18" r="6" fill="#ff5f56" />
-<circle cx="38" cy="18" r="6" fill="#ffbd2e" />
-<circle cx="56" cy="18" r="6" fill="#27c93f" />
-<text x="492" y="22" class="title-text">nvtam_X@terminal:~ (mascot.txt)</text>
+<rect width="984" height="772" class="bg" />
+<path d="M 0,10 A 10,10 0 0,1 10,0 L 974,0 A 10,10 0 0,1 984,10 L 984,34 L 0,34 Z" class="titlebar" />
+<circle cx="20" cy="17" r="5.5" fill="#ff5f56" />
+<circle cx="38" cy="17" r="5.5" fill="#ffbd2e" />
+<circle cx="56" cy="17" r="5.5" fill="#27c93f" />
 
 <g id="art">
-  <text x="24" y="52" class="line l0" xml:space="preserve">                                                                                 :S@@@@* .;?%*,                         </text>
-  <text x="24" y="65" class="line l1" xml:space="preserve">                                                                                ?@@*.;@@S@@@S@@%                        </text>
-  <text x="24" y="79" class="line l2" xml:space="preserve">                                                                               S@#:  ,S@@#;  :#@*                       </text>
-  <text x="24" y="92" class="line l3" xml:space="preserve">                                                                              *@@;   ,S@@;   .%@#                       </text>
-  <text x="24" y="106" class="line l4" xml:space="preserve">                                                                             :#@*    :#@%    .%@#                       </text>
-  <text x="24" y="119" class="line l5" xml:space="preserve">                                                                             *@@.    ;@@:    ,%@S                       </text>
-  <text x="24" y="133" class="line l6" xml:space="preserve">                                                                            .#@?    .+@@.    :#@?                       </text>
-  <text x="24" y="146" class="line l7" xml:space="preserve">                                                                            .@@;    .%@S     ;@@:                       </text>
-  <text x="24" y="160" class="line l8" xml:space="preserve">                                                                            .@@;    .#@*    .?@#                        </text>
-  <text x="24" y="173" class="line l9" xml:space="preserve">                                                                            .#@?    ,@@;    .#@*                        </text>
-  <text x="24" y="187" class="line l10" xml:space="preserve">                                                                             ?@@.   :@@:    :@@,                        </text>
-  <text x="24" y="200" class="line l11" xml:space="preserve">                                                                           .,+@@;   +@@,    %@#;,.                      </text>
-  <text x="24" y="214" class="line l12" xml:space="preserve">                                                                     ;?#@@@@@@@@#.  +@S.    #@##@@@@S*,:: :?;           </text>
-  <text x="24" y="227" class="line l13" xml:space="preserve">                                                                 ,%@@@@S;.                        .*#@@S?+.*?;          </text>
-  <text x="24" y="241" class="line l14" xml:space="preserve">                                                              .?@@@?:.                                ,*?%#%;*??+       </text>
-  <text x="24" y="254" class="line l15" xml:space="preserve">                                                            ,S@@S,   .:#@#S?            :@@%;,      .+??*;%@@S:??*,     </text>
-  <text x="24" y="268" class="line l16" xml:space="preserve">                                                          .S@@?.    ?@S;                   ,*@#+     ..;***?S@S%*       </text>
-  <text x="24" y="281" class="line l17" xml:space="preserve">                                                         ;@@S.    :##;                       .*@#:     ....+?%#S%+      </text>
-  <text x="24" y="295" class="line l18" xml:space="preserve">                                                        *@@;     :##.                          ,@#;         ,,.%@@;     </text>
-  <text x="24" y="308" class="line l19" xml:space="preserve">                                                       ?@@;     .?@,                            ,#S,            *@@:    </text>
-  <text x="24" y="322" class="line l20" xml:space="preserve">                                                      +@@*       +?. ,%#@#*.                     +@;            .*@@,   </text>
-  <text x="24" y="335" class="line l21" xml:space="preserve">                                                     .%@#.          .#@?:*@@.        ,%@##@*.                    ,S@S   </text>
-  <text x="24" y="349" class="line l22" xml:space="preserve">                                                     ;@@;  .,,,,,.. .#@;.+@?        .*@@*;S@%                     *@@:  </text>
-  <text x="24" y="362" class="line l23" xml:space="preserve">                                                     +@@. .,#%;#?*+. .;??*,          ;##+;%@:...,....             :@@*  </text>
-  <text x="24" y="376" class="line l24" xml:space="preserve">                             ,%@@S;                  +@@ ..%#,?#+#;.           ..     .,:,..,?*:#*,,,,.           .#@?  </text>
-  <text x="24" y="389" class="line l25" xml:space="preserve">                            S@@SS#@@@@@S+;,          +@@.  ..,,,,..        S#;.S@:         .%%:S#+#%?#+.          .#@?  </text>
-  <text x="24" y="403" class="line l26" xml:space="preserve">                           ,@@*,,,,,,:?@@@@@@@@%,    ;@@;                  .:@@+#@@@+       :,,,,:*::;..          :#@*  </text>
-  <text x="24" y="416" class="line l27" xml:space="preserve">@@@#?+,                    ,@@*,,,,,,,,,,,,:*?%@@@@@@@@@#.                  .*@?,            .........            *@@:  </text>
-  <text x="24" y="430" class="line l28" xml:space="preserve">  :#@@@@@@%.                @@?,,,,,,,,,,,,,,,,,,,,,+#@@@@@@@@?.                                                 ,S@S   </text>
-  <text x="24" y="443" class="line l29" xml:space="preserve">       :+?@@@@@#?+,         #@%,,,,,,,,,,,,,,,,,,,,,,,,,,,;**%@@@@@@S?;.                                        .%@#.   </text>
-  <text x="24" y="457" class="line l30" xml:space="preserve">             .+#@@@@@@@?.   ?@#:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:?@@@@@%.                                    .#@#.    </text>
-  <text x="24" y="470" class="line l31" xml:space="preserve">                   .;+%@@@@@@@@:,,,,*%%%+::;*?:+??%%*,,,,,,,,,,,,,,,,,,;%@@?                                 .*@@?.     </text>
-  <text x="24" y="484" class="line l32" xml:space="preserve">                           ,%@@;,,;S .?.     .%@@@@@@@@@@S;,,,,,,,,,,,,,,+@@?                              .+@@@:       </text>
-  <text x="24" y="497" class="line l33" xml:space="preserve">                            ,@@*,,?,  ;??%?.    :#@@*,,,,,,,,,,,,,,,,,,,,,%@#,                            :#@@@:        </text>
-  <text x="24" y="511" class="line l34" xml:space="preserve">                            .#@%,;*.     ++.    :@@:,,,,,,,,,,,,,,,,,,,,,,+@@*                          ... .S@%        </text>
-  <text x="24" y="524" class="line l35" xml:space="preserve">                             %@#,;*..:;;;,?,    .%@#?++:,,,,,,,,,,,,,,,,,,:#@%.                         S@?..*@@. .,    </text>
-  <text x="24" y="538" class="line l36" xml:space="preserve">                             *@@,:?..:,,,+%.    .?@@###S:,,,,,,,,,,,,,,,,,,#@%.                         S@%. +@@*@@@S.  </text>
-  <text x="24" y="551" class="line l37" xml:space="preserve">                             +@@:,:S, ...:?.   .?@@S;,,,,,,,,,,,,,,,,,,,,,,%@#:                         +@@;.%@# ;%%?:  </text>
-  <text x="24" y="565" class="line l38" xml:space="preserve">                             ;@@*,,,%###%+*%#@@@@@@@S,,,,,,,,,,,,,,,,,,,,,,*@@*:,.                      .+@@@@S. ;SS#S, </text>
-  <text x="24" y="578" class="line l39" xml:space="preserve">                             ,S@S,,,,,,,,,,,,,,,:+S@@%,,,,,,,,,,,,,,,,,,,,,;@@@@@@@#S*:                    *@#:  ;##%:  </text>
-  <text x="24" y="592" class="line l40" xml:space="preserve">                             .%@#,,,,,,,,,,,,,,,,,,,S?,,,,,,,,,,,,,,,,,,,,,,@@+  ,+%S@@@@@#%+:,.           +@#:  .+%##; </text>
-  <text x="24" y="605" class="line l41" xml:space="preserve">                              ?@#:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,@@@@#%+.    .:?@@@@@@#S?:.     *@#: .#@#:   </text>
-  <text x="24" y="619" class="line l42" xml:space="preserve">                       .      *@@+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,S@@%%#@@@@@#?;:.   ,+?S@@@@@#%+S@S.  .*@#.  </text>
-  <text x="24" y="632" class="line l43" xml:space="preserve">                   :%%;?+     ;@@?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,?@@+*#S?::+S@@@@@@#%;.    ,;%@@@@@@#?:      </text>
-  <text x="24" y="646" class="line l44" xml:space="preserve">                .?%?????*,    :#@@@%*;:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+@@#?;,;*%????+:;*%#@@@@S;.     .:*%#@@@@S*;</text>
-  <text x="24" y="659" class="line l45" xml:space="preserve">                                 ,?@@@@@@@S+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:@@+,:+#S;;%#*:.,?#@@@@%@@%.           ,+#@@</text>
-  <text x="24" y="673" class="line l46" xml:space="preserve">                                      .:*?S@@@@@S?*;,,,,,,,,,,,,,,,,,,,,,,,,:@@S%%??*:,;*S@@@@SS%S@@@S:                 </text>
-  <text x="24" y="686" class="line l47" xml:space="preserve">                           :%@*    ,          ,+#@@@@@@#*,,,,,,,,,,,,,,,,,,,:S@S,.,*#@@@@#??@@@@@@?.                    </text>
-  <text x="24" y="700" class="line l48" xml:space="preserve">                          .:*;    ?: .:?##+         ,+?S@@@@#%*;,,,,,,,,,,,,,%@@#@@@SS%S@@@@S*:                         </text>
-  <text x="24" y="713" class="line l49" xml:space="preserve">                                 +%S#+.                    :%@@@@@@S*:,,,,,,,*@@@%#@@@@@*.                              </text>
-  <text x="24" y="727" class="line l50" xml:space="preserve">              *%+,                                              ,+?#@@@@@#SS%S@@@@#?;.                                  </text>
-  <text x="24" y="740" class="line l51" xml:space="preserve">             .?*%S+                                                    .:*%####:                                        </text>
+  <text x="24" y="50" class="line l0" xml:space="preserve">                                                                                 :S@@@@* .;?%*,                         </text>
+  <text x="24" y="63" class="line l1" xml:space="preserve">                                                                                ?@@*.;@@S@@@S@@%                        </text>
+  <text x="24" y="77" class="line l2" xml:space="preserve">                                                                               S@#:  ,S@@#;  :#@*                       </text>
+  <text x="24" y="90" class="line l3" xml:space="preserve">                                                                              *@@;   ,S@@;   .%@#                       </text>
+  <text x="24" y="104" class="line l4" xml:space="preserve">                                                                             :#@*    :#@%    .%@#                       </text>
+  <text x="24" y="117" class="line l5" xml:space="preserve">                                                                             *@@.    ;@@:    ,%@S                       </text>
+  <text x="24" y="131" class="line l6" xml:space="preserve">                                                                            .#@?    .+@@.    :#@?                       </text>
+  <text x="24" y="144" class="line l7" xml:space="preserve">                                                                            .@@;    .%@S     ;@@:                       </text>
+  <text x="24" y="158" class="line l8" xml:space="preserve">                                                                            .@@;    .#@*    .?@#                        </text>
+  <text x="24" y="171" class="line l9" xml:space="preserve">                                                                            .#@?    ,@@;    .#@*                        </text>
+  <text x="24" y="185" class="line l10" xml:space="preserve">                                                                             ?@@.   :@@:    :@@,                        </text>
+  <text x="24" y="198" class="line l11" xml:space="preserve">                                                                           .,+@@;   +@@,    %@#;,.                      </text>
+  <text x="24" y="212" class="line l12" xml:space="preserve">                                                                     ;?#@@@@@@@@#.  +@S.    #@##@@@@S*,:: :?;           </text>
+  <text x="24" y="225" class="line l13" xml:space="preserve">                                                                 ,%@@@@S;.                        .*#@@S?+.*?;          </text>
+  <text x="24" y="239" class="line l14" xml:space="preserve">                                                              .?@@@?:.                                ,*?%#%;*??+       </text>
+  <text x="24" y="252" class="line l15" xml:space="preserve">                                                            ,S@@S,   .:#@#S?            :@@%;,      .+??*;%@@S:??*,     </text>
+  <text x="24" y="266" class="line l16" xml:space="preserve">                                                          .S@@?.    ?@S;                   ,*@#+     ..;***?S@S%*       </text>
+  <text x="24" y="279" class="line l17" xml:space="preserve">                                                         ;@@S.    :##;                       .*@#:     ....+?%#S%+      </text>
+  <text x="24" y="293" class="line l18" xml:space="preserve">                                                        *@@;     :##.                          ,@#;         ,,.%@@;     </text>
+  <text x="24" y="306" class="line l19" xml:space="preserve">                                                       ?@@;     .?@,                            ,#S,            *@@:    </text>
+  <text x="24" y="320" class="line l20" xml:space="preserve">                                                      +@@*       +?. ,%#@#*.                     +@;            .*@@,   </text>
+  <text x="24" y="333" class="line l21" xml:space="preserve">                                                     .%@#.          .#@?:*@@.        ,%@##@*.                    ,S@S   </text>
+  <text x="24" y="347" class="line l22" xml:space="preserve">                                                     ;@@;  .,,,,,.. .#@;.+@?        .*@@*;S@%                     *@@:  </text>
+  <text x="24" y="360" class="line l23" xml:space="preserve">                                                     +@@. .,#%;#?*+. .;??*,          ;##+;%@:...,....             :@@*  </text>
+  <text x="24" y="374" class="line l24" xml:space="preserve">                             ,%@@S;                  +@@ ..%#,?#+#;.           ..     .,:,..,?*:#*,,,,.           .#@?  </text>
+  <text x="24" y="387" class="line l25" xml:space="preserve">                            S@@SS#@@@@@S+;,          +@@.  ..,,,,..        S#;.S@:         .%%:S#+#%?#+.          .#@?  </text>
+  <text x="24" y="401" class="line l26" xml:space="preserve">                           ,@@*,,,,,,:?@@@@@@@@%,    ;@@;                  .:@@+#@@@+       :,,,,:*::;..          :#@*  </text>
+  <text x="24" y="414" class="line l27" xml:space="preserve">@@@#?+,                    ,@@*,,,,,,,,,,,,:*?%@@@@@@@@@#.                  .*@?,            .........            *@@:  </text>
+  <text x="24" y="428" class="line l28" xml:space="preserve">  :#@@@@@@%.                @@?,,,,,,,,,,,,,,,,,,,,,+#@@@@@@@@?.                                                 ,S@S   </text>
+  <text x="24" y="441" class="line l29" xml:space="preserve">       :+?@@@@@#?+,         #@%,,,,,,,,,,,,,,,,,,,,,,,,,,,;**%@@@@@@S?;.                                        .%@#.   </text>
+  <text x="24" y="455" class="line l30" xml:space="preserve">             .+#@@@@@@@?.   ?@#:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:?@@@@@%.                                    .#@#.    </text>
+  <text x="24" y="468" class="line l31" xml:space="preserve">                   .;+%@@@@@@@@:,,,,*%%%+::;*?:+??%%*,,,,,,,,,,,,,,,,,,;%@@?                                 .*@@?.     </text>
+  <text x="24" y="482" class="line l32" xml:space="preserve">                           ,%@@;,,;S .?.     .%@@@@@@@@@@S;,,,,,,,,,,,,,,+@@?                              .+@@@:       </text>
+  <text x="24" y="495" class="line l33" xml:space="preserve">                            ,@@*,,?,  ;??%?.    :#@@*,,,,,,,,,,,,,,,,,,,,,%@#,                            :#@@@:        </text>
+  <text x="24" y="509" class="line l34" xml:space="preserve">                            .#@%,;*.     ++.    :@@:,,,,,,,,,,,,,,,,,,,,,,+@@*                          ... .S@%        </text>
+  <text x="24" y="522" class="line l35" xml:space="preserve">                             %@#,;*..:;;;,?,    .%@#?++:,,,,,,,,,,,,,,,,,,:#@%.                         S@?..*@@. .,    </text>
+  <text x="24" y="536" class="line l36" xml:space="preserve">                             *@@,:?..:,,,+%.    .?@@###S:,,,,,,,,,,,,,,,,,,#@%.                         S@%. +@@*@@@S.  </text>
+  <text x="24" y="549" class="line l37" xml:space="preserve">                             +@@:,:S, ...:?.   .?@@S;,,,,,,,,,,,,,,,,,,,,,,%@#:                         +@@;.%@# ;%%?:  </text>
+  <text x="24" y="563" class="line l38" xml:space="preserve">                             ;@@*,,,%###%+*%#@@@@@@@S,,,,,,,,,,,,,,,,,,,,,,*@@*:,.                      .+@@@@S. ;SS#S, </text>
+  <text x="24" y="576" class="line l39" xml:space="preserve">                             ,S@S,,,,,,,,,,,,,,,:+S@@%,,,,,,,,,,,,,,,,,,,,,;@@@@@@@#S*:                    *@#:  ;##%:  </text>
+  <text x="24" y="590" class="line l40" xml:space="preserve">                             .%@#,,,,,,,,,,,,,,,,,,,S?,,,,,,,,,,,,,,,,,,,,,,@@+  ,+%S@@@@@#%+:,.           +@#:  .+%##; </text>
+  <text x="24" y="603" class="line l41" xml:space="preserve">                              ?@#:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,@@@@#%+.    .:?@@@@@@#S?:.     *@#: .#@#:   </text>
+  <text x="24" y="617" class="line l42" xml:space="preserve">                       .      *@@+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,S@@%%#@@@@@#?;:.   ,+?S@@@@@#%+S@S.  .*@#.  </text>
+  <text x="24" y="630" class="line l43" xml:space="preserve">                   :%%;?+     ;@@?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,?@@+*#S?::+S@@@@@@#%;.    ,;%@@@@@@#?:      </text>
+  <text x="24" y="644" class="line l44" xml:space="preserve">                .?%?????*,    :#@@@%*;:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,+@@#?;,;*%????+:;*%#@@@@S;.     .:*%#@@@@S*;</text>
+  <text x="24" y="657" class="line l45" xml:space="preserve">                                 ,?@@@@@@@S+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:@@+,:+#S;;%#*:.,?#@@@@%@@%.           ,+#@@</text>
+  <text x="24" y="671" class="line l46" xml:space="preserve">                                      .:*?S@@@@@S?*;,,,,,,,,,,,,,,,,,,,,,,,,:@@S%%??*:,;*S@@@@SS%S@@@S:                 </text>
+  <text x="24" y="684" class="line l47" xml:space="preserve">                           :%@*    ,          ,+#@@@@@@#*,,,,,,,,,,,,,,,,,,,:S@S,.,*#@@@@#??@@@@@@?.                    </text>
+  <text x="24" y="698" class="line l48" xml:space="preserve">                          .:*;    ?: .:?##+         ,+?S@@@@#%*;,,,,,,,,,,,,,%@@#@@@SS%S@@@@S*:                         </text>
+  <text x="24" y="711" class="line l49" xml:space="preserve">                                 +%S#+.                    :%@@@@@@S*:,,,,,,,*@@@%#@@@@@*.                              </text>
+  <text x="24" y="725" class="line l50" xml:space="preserve">              *%+,                                              ,+?#@@@@@#SS%S@@@@#?;.                                  </text>
+  <text x="24" y="738" class="line l51" xml:space="preserve">             .?*%S+                                                    .:*%####:                                        </text>
 </g>
 </svg>
