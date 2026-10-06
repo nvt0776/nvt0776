@@ -6,7 +6,7 @@
 
 <br/><br/>
 
-<!-- Usagi Terminal: Code Prologue + ASCII Mascot Art -->
-<img src="./mascot.svg" alt="Usagi Mascot" width="650" />
+<!-- Usagi Terminal: Code Prologue -> Disappear -> Mascot Appears -->
+<img src="./usagi_show.svg" alt="Usagi Mascot" width="650" />
 
 </div>
