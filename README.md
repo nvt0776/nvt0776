@@ -7,7 +7,7 @@
 <br/><br/>
 
 <!-- Usagi Terminal: Big Code -> Clear -> Mascot Art -->
-<img src="./usagi_terminal.svg" alt="Usagi Mascot" width="650" />
+<img src="./assets/usagi_terminal.svg" alt="Usagi Mascot" width="650" />
 
 ---
 
